@@ -120,8 +120,3 @@ SELECT name
 FROM employee
 WHERE salary > 2000 and months < 10
 ORDER BY employee_id
-
--- Write a query identifying the type of each record in the TRIANGLES table using its three side lengths.
-SELECT
-IF (a+b > c and b+c > a and c+a > b, IF(a=b and b=c, 'Equilateral', IF(a=b or b=c or a=c, 'Isosceles', 'Scalene')), 'Not A Triangle')
-FROM triangles
